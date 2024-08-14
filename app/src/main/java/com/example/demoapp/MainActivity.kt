@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
-    var myInteger = 10;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,8 +19,9 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        Log.e("Log1","")
-        myInteger = 20
-        Log.e("Log2","")
+    }
+
+    fun plus(a: Int, b: Int): Int{
+        return a+b
     }
 }
